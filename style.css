@@ -19,6 +19,7 @@ body {
 }
 .cyan{
     color: rgb(146, 233, 255);
+    text-shadow: 0px 0px 50px rgb(152, 242, 255,1);
 }
 .btn{
     border: 2px solid white;
@@ -44,6 +45,10 @@ body {
 .picofme{
     transform: scale(95%);
     position: absolute;
+}
+.cyan:hover{
+    color: red;
+    text-shadow: 0px 0px 50px rgb(255, 152, 152);
 }
 /* keyframes */
 @keyframes fadeIn {
