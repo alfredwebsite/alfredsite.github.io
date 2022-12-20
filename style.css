@@ -3,15 +3,15 @@ body {
     margin: auto;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    pointer-events: none;
+    overflow-x: hidden;
+    overflow-y: visible;
 }
 .title{
     text-align: center;
-    margin-left: 43%;
+    margin-left: 10%;
     margin-top: 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 45px;
+    font-size: 100px;
     animation: fadeIn 5s;
     color: white;
     opacity: 100%;
@@ -19,6 +19,31 @@ body {
 }
 .cyan{
     color: rgb(146, 233, 255);
+}
+.btn{
+    border: 2px solid white;
+    background-color: rgba(255,0,0,0);
+    color: white;
+    padding: 4px 8px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-top: 30%;
+    margin-left: 17%;
+    border-radius: 25px;
+    animation: fadeInBtn 6s;
+    position: absolute;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.portbutton{
+    margin-left: 23%; 
+}
+.picofme{
+    transform: scale(95%);
+    position: absolute;
 }
 /* keyframes */
 @keyframes fadeIn {
@@ -33,5 +58,19 @@ body {
     }
     100%{
         margin-top: 10%;
+    }
+}
+@keyframes fadeInBtn {
+    0%{
+        opacity: 0; margin-top: 45%;
+    } 
+    95%{
+        margin-top: 30%;
+    }
+    100%{
+        opacity: 100%;
+    }
+    100%{
+        margin-top: 30%;
     }
 }
