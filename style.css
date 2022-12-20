@@ -5,6 +5,8 @@ body {
     height: 1080px;
     overflow-x: hidden;
     overflow-y: hidden;
+    pointer-events: none;
+    user-select: none;
 }
 .title{
     margin-left: 195px;
@@ -19,6 +21,7 @@ body {
 .cyan{
     color: rgb(146, 233, 255);
     text-shadow: 0px 0px 50px rgb(152, 242, 255,1);
+    pointer-events: painted;
 }
 .btn{
     border: 2px solid white;
@@ -33,6 +36,7 @@ body {
     border-radius: 25px;
     animation: fadeInBtn 6s;
     position: absolute;
+    pointer-events: auto;
 }
 .btnnoanim{
     border: 2px solid white;
@@ -47,6 +51,7 @@ body {
     border-radius: 25px;
     position: absolute;
     animation: onlyfadeIn 5s;
+    pointer-events: auto;
 }
 .btn:hover{
     background-color: white;
@@ -134,7 +139,7 @@ body {
         margin-left: 50%; opacity: 1;
     }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1700px) {
     .picofme {
       display: none;
     }
