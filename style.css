@@ -1,162 +1,108 @@
-body {
-    background-color: rgb(26, 26, 26);
-    margin: auto;
-    width: 1920px;
-    height: 1080px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    pointer-events: none;
-    user-select: none;
+body{
+    background-color:rgb(56, 88, 158);
 }
-.title{
-    margin-left: 195px;
-    margin-top: 100px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 100px;
-    animation: fadeIn 5s;
-    color: white;
-    opacity: 100%;
+
+.q1, .yey{
+    top: 50%;
+    left: 50%;
     position: absolute;
+    transform: translate(-50%, -50%);
 }
-.cyan{
-    color: rgb(146, 233, 255);
-    text-shadow: 0px 0px 50px rgb(152, 242, 255,1);
-    pointer-events: painted;
+
+.pic{
+    background-color: black;
 }
-.btn{
-    border: 2px solid white;
-    background-color: rgba(255,0,0,0);
-    color: white;
-    padding: 4px 8px;
-    font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    margin-top: 500px;
-    margin-left: 325px;
+
+.buttonY,.buttonN{
+    width: 35%;
+    height: 30px;
     border-radius: 25px;
-    animation: fadeInBtn 6s;
-    position: absolute;
-    pointer-events: auto;
+    border-style: none;
 }
-.btnnoanim{
-    border: 2px solid white;
-    background-color: rgba(255,0,0,0);
+
+.buttonY{
+    margin-right: 65px;
+}
+.ask{
+    font-family: Helvetica;
+    font-size: 250%;
     color: white;
-    padding: 4px 8px;
-    font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    margin-top: 500px;
-    margin-left: 325px;
-    border-radius: 25px;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
     position: absolute;
-    animation: onlyfadeIn 5s;
-    pointer-events: auto;
 }
-.btn:hover{
-    background-color: white;
-    color: black;
+
+.yes1{
+    opacity: 0%;
 }
-.portbutton{
-    margin-left: 450px; 
+
+.jok{
+    margin-right: 27%;
 }
-.aboutmehomebutton{
-    margin-top: 100px;
-    margin-left: 100px;
+
+.jok2{
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
 }
-.cyan:hover{
-    color: red;
-    text-shadow: 0px 0px 50px rgb(255, 152, 152);
+
+.sumbong{
+    font-family: Helvetica;
+    color: white;
+    position: relative;
+    margin-left: 5%;
+    width: 100%;
 }
-.btnnoanim:hover{
-    background-color: white;
-    color: black;
+
+.diko{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
-.abtmdsc{
-    margin-top: 350px;
-    margin-left: 250px;
-    font-weight: bold;
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spinning-text span {
+    display: inline-block;
+    animation: spin 5s linear infinite; /* Adjust the duration and timing function as needed */
+}
+
+/* Additional styling for better visibility */
+.spinning-text {
     font-size: 30px;
-    color: rgb(245, 250, 255);
-    position: absolute;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    animation: autoBio 5s;
-}
-.aboutme{
-    margin-top: 500px;
-    position: absolute;
-    margin-left: 300px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
+    font-weight: bold;
     color: white;
-    animation: abtmAnim 5s;
+    font-family: Helvetica;
 }
-/* keyframes */
-@keyframes onlyfadeIn {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+
+.ily{
+    position: absolute;
+    left: 54%;
+    transform: translateX(-50%);
+    width: 85%;
 }
-@keyframes fadeIn {
-    0%{
-        opacity: 0; margin-top: 1000px;
-    } 
-    95%{
-        margin-top: 100px;
-    }
-    100%{
-        opacity: 100%;
-    }
-    100%{
-        margin-top: 100px;
-    }
-}
-@keyframes fadeInBtn {
-    0%{
-        opacity: 0; margin-top: 1000px;
-    } 
-    95%{
-        margin-top: 500px;
-    }
-    100%{
-        opacity: 100%;
-    }
-    100%{
-        margin-top: 500px;
-    }
-}
-@keyframes pfpAnim {
-    0%{
-        margin-left: 100%; opacity: 0;
-    }
-    45%{
-        opacity: 0.2    ;
-    }
-    100%{
-        margin-left: 50%; opacity: 1;
-    }
-}
-@media screen and (max-width: 1700px) {
-    .picofme {
-      display: none;
-    }
+
+#confetti {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
   }
-@keyframes abtmAnim {
-    0%{
-        margin-top: 1000px;
-    }
-    100%{
-        margin-top: 500px;
-    }
-}
-@keyframes autoBio{
-    0%{
-        margin-left: -1000px ;
-    }
-    100%{
-        margin-left: 250px;
-    }
+
+.ella{
+    font-family: Helvetica;
+    color: rgb(255, 0, 238);
+    position: absolute;
+    top: 50%;
+    text-shadow: 1px 1px black;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
